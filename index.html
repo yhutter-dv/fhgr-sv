@@ -1,17 +1,28 @@
-[comment]: # (THEME = black)
-[comment]: # (CODE_THEME = monokai)
-[comment]: # (controls: true)
-[comment]: # (keyboard: true)
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<title>Scientific Visualization </title>
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+		<!-- Theme used for syntax highlighted code -->
+<link rel="stylesheet" href="plugin/highlight/monokai.min.css" id="highlight-theme"></head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+<section data-markdown  ><textarea data-template>
 [comment]: # (markdown: { smartypants: true })
-[comment]: # (hash: false)
-[comment]: # (respondToHashChanges: false)
 [comment]: # (Other settings are documented at https://revealjs.com/config/)
 
 
 # Scientific Visualization 
 Yannick Hutter | FHGR Chur | 
 
-[comment]: # (!!!)
+</textarea></section>
+<section data-markdown  ><textarea data-template>
 
 ## Scientific Visualization
 * Teilgebiet der Computergrafik
@@ -19,20 +30,23 @@ Yannick Hutter | FHGR Chur |
 * Dient dem **besseren Verständnis der zu Grunde liegenden Daten**
 * Daten werden **vom Computer anhand von mathematischen/physikalischen Gesetzen generiert**
 
-[comment]: # (!!!)
+</textarea></section>
+<section data-markdown  ><textarea data-template>
 
 ## Wissenschaftliche Simulation
 * Wird für die **Rekonstruktion und Vorhersage** von Phänomenen und technischen Prozessen eingesetzt
 * Ist die **dritte Säule der Erkennnis** (nebst Theorie und Experiment)
 
-[comment]: # (!!!)
+</textarea></section>
+<section data-markdown  ><textarea data-template>
 
 ## Warum braucht es Simulationen?
 * Nicht alle Experimente können durchgeführt werden
 * Experimente sind teilweise unerwünscht oder zu kostspielig
 * Simulationsergebnisse (reine Zahlen) oft nicht intuitiv, d.h. es braucht eine **visuelle Darstellung**
 
-[comment]: # (!!!)
+</textarea></section>
+<section data-markdown  ><textarea data-template>
 
 ## Simulationspipeline
 * Modellierung - Bestimmung von Parametern und Beziehungen
@@ -42,7 +56,8 @@ Yannick Hutter | FHGR Chur |
 * Validierung - Vergleich mit Realität
 * Einbettung - Einführung in den Arbeitsprozess
 
-[comment]: # (!!!)
+</textarea></section>
+<section data-markdown  ><textarea data-template>
 
 ## Komplexität
 * Da es sehr Ressourcenintensiv ist Simulationen durchzuführen, sollte die **richtige Skala** gewählt werden (1D, 2D, 3D)
@@ -50,12 +65,14 @@ Yannick Hutter | FHGR Chur |
 * 2D - keine Information in der Höhe
 * 3D - Alle Informationen vorhanden
 
-[comment]: # (!!!)
+</textarea></section>
+<section data-markdown  ><textarea data-template>
 
 ## Beispiele von Simulationen
 * Personenstromsimulation (basierend auf Cellular Automata)
 
-[comment]: # (!!!)
+</textarea></section>
+<section data-markdown  ><textarea data-template>
 
 ## Geometrische Modellierung
 * Beschreibung von Körpern im 3D Raum
@@ -64,7 +81,8 @@ Yannick Hutter | FHGR Chur |
 * Indirekte Darstellung - **Darstellung von Aussenseite** bspw. Computerspiele
 * Strukturiertes Gitter - Wenn Objekt in X und Y Achse geschnitten wird und danach **gleich grosse Stücke resultieren**
 
-[comment]: # (!!!)
+</textarea></section>
+<section data-markdown  ><textarea data-template>
 
 
 ## Rigid Body (Starre Körper)
@@ -73,13 +91,15 @@ Yannick Hutter | FHGR Chur |
 * Orientierbar
 * Mannigfaltigkeit möglich
 
-[comment]: # (!!!)
+</textarea></section>
+<section data-markdown  ><textarea data-template>
 
 ## Mannigfaltikgeit
 * Eine Kante gehört im Normalfall immer zu einer Fläche
 * Bei der Mannigfaltigkeit gehört jedoch eine Kante zu **zwei Flächen**, bspw. wenn sich zwei Würfel eine Kante teilen
 
-[comment]: # (!!!)
+</textarea></section>
+<section data-markdown ><textarea data-template>
 
 ## Indirekte Darstellung
 * Wird in Computergrafiken verwendet
@@ -90,3 +110,30 @@ Yannick Hutter | FHGR Chur |
 
 
 
+</textarea></section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script src="plugin/math/math.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+Reveal.initialize({
+controls : false,
+markdown : {smartypants: true},
+controls : true,
+keyboard : true,
+hash : false,
+respondToHashChanges : false,
+				hash: true,
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath ]
+			});
+		</script>
+	</body>
+</html>
