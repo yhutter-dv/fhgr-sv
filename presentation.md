@@ -88,5 +88,24 @@ Yannick Hutter | FHGR Chur |
 * Diese gilt auch bei Vierecken
 * Vertices speichern **geometrische Information**, Edges und Faces nur topologische Informationen
 
+[comment]: # (!!!)
 
+## VEF Graph
+* Kanten können weggelassen werden
+* Vertices werden dann im Uhrzeiger oder Gegenuhrzeigersinn angegeben
 
+## Konvex vs. Konkav
+* Bei Konvexen Körpern kann man irgendwo zwei Punkte wählen und eine Linie ziehen
+* Die Linie verlässt dabei nie den Körper
+* Konvexe Körper können sich auch nicht im gegensatz zu konkaven Körpern teilweise verdecken
+* War wichtig in Computerspielen aus Performancegründen
+
+[comment]: # (!!!)
+
+## Volumenmodell (direkte Darstellung)
+* Beschreibt wie viel Volumen das Modell einnimmt
+* Ist ein bestimmer Punkt innerhalb oder Ausserhalb des Objektes?
+* Wird auf Basis des Oberflächemodells erstellt
+* Das Volumenmodell wird für die Berechnung benötigt
+
+[comment]: # (!!!)
